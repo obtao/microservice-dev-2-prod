@@ -152,18 +152,18 @@ networks:
 
 Aucune subtilité ici.
 
-** Réseau applicatif ** 
+**Réseau applicatif** 
 
 > Pour la partie réseau, nous faisons le choix de créer un réseau docker par backend dans l'application (`blog` / `catalog`) et de créer un réseau commun (`app_demo_traefik`) dans lequel les briques peuvent communiquer. Cela va permettre 2 choses : si un service ne rejoint pas le réseau commun, il reste inaccessible, et les services peuvent porter des noms explicites à l'intérieur de leur réseau applicatif (`php`, `varnish`, `pgsql`)
 > La configuration des applications reste ainsi simple `pg_host: pgsql` plutôt que `pg_host: blog_pgsql`. 
 
-** Réseau local ** 
+**Réseau local** 
 
 > Pour le local, nous allons créer un réseau "local_traefik" que vos containers devront rejoindre pour être accessibles depuis l'extérieur. 
 
 
 Allez-y `docker create network local_traefik && docker-compose up -d`, Traefik tourne et est prêt à recevoir les requêtes. 
-Vous pouvez accéder à l'[admin de traefik|http://localhost:8080].
+Vous pouvez accéder à l'[admin de traefik](http://localhost:8080).
 
 En bref, lorsque vous faites du développement il vous suffit de démarrer traefik pour profiter du reverse-proxy. 
 
