@@ -1,0 +1,11 @@
+defaultEntryPoints = ["http"]
+
+[entryPoints]
+    [entryPoints.http]
+    address = ":80"
+
+[docker]
+exposedbydefault = false
+
+[web]
+address = ":8080"
