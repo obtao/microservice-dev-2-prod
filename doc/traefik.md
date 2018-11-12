@@ -32,7 +32,7 @@ Personne n'en sait plus rien. Et nous ne sommes qu'au début de l'application mi
 
 Si j'ajoute à cela le fait que depuis l'extérieur, l'url du backend blog sera "localhost:80" (pour atteindre le varnish), mais depuis les containers l'URL sera 'blog_varnish' par exemple. De quoi vous assurer des sueurs froides pendant le debug... (Et une belle liste de favoris...)
 
-De plus, si vous développez d'autres applications "legacy" à côté, vous devrez les stopper pour libérer le port 80 ou venir les mapper sur des ports disponibles (A ajouter bien entendu au "manifeste" présent au dessus)
+De plus, si vous développez d'autres applications "legacy" à côté, vous devrez les stopper pour libérer le port 80 ou venir les mapper sur des ports disponibles (A ajouter bien entendu au "manifest" présent au dessus)
 
 #### Dans l'environnement de preprod/prod
 
