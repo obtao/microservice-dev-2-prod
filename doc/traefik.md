@@ -162,7 +162,7 @@ Aucune subtilité ici.
 > Pour le local, nous allons créer un réseau "local_traefik" que vos containers devront rejoindre pour être accessibles depuis l'extérieur. 
 
 
-Allez-y `docker create network local_traefik && docker-compose up -d`, Traefik tourne et est prêt à recevoir les requêtes. 
+Allez-y `docker network create local_traefik && docker-compose up -d`, Traefik tourne et est prêt à recevoir les requêtes. 
 Vous pouvez accéder à l'[admin de traefik](http://localhost:8080).
 
 En bref, lorsque vous faites du développement il vous suffit de démarrer traefik pour profiter du reverse-proxy. 
